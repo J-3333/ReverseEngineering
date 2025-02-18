@@ -21,16 +21,22 @@ To produce an executable:
 # 1. Assemble the program into an object file
 nasm -f elf32 swapcase.asm -o  swapcase.o
 
-# 2️. Link the object file to create an executable
+# 2. Link the object file to create an executable
 ld -m elf_i386 swapcase.o    
 
-# 3️. Run the executable
+# 3. Run the executable
 ./a.out
+
+Example:
+Enter text: (Max 23 characters): Hello JOE!
+After Case Swapping:hELLO joe!
 
 ```
 
+
+
 ## Issues/Notes
-1. Only processes alphabetic characters (A-Z, a-z), leaving other characters unchanged.
+1. The program swaps the case of alphabetic characters (A-Z, a-z) while keeping non-alphabetic characters unchanged."
 2. Limited to 23 characters, as defined in the buffer size.
 3. If an empty input is given, the program may not behave as expected.
 4. The program relies on Linux system calls, so it will not work on Windows without a Linux emulator like WSL (Windows Subsystem for Linux).
