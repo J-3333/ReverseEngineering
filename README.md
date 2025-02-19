@@ -26,9 +26,9 @@ ld -m elf_i386 swapcase.o
 # 3. Run the executable
 ./a.out
 
-Example:
-Enter text: (Max 23 characters): Hello JOE!
-After Case Swapping:hELLO joe!
+#Example:
+Enter text (Max 23 characters):Hello Terry123!Eif
+After Case Swapping:hELLO tERRY123!eIF  
 
 ```
 
